@@ -11,8 +11,8 @@ import com.adobe.xmp.XMPSchemaRegistry;
 
 
 public class XMPExtractor {
-    private static File file;
-    private static XMPSchemaRegistry registry = XMPMetaFactory.getSchemaRegistry();
+    private File file;
+    private XMPSchemaRegistry registry = XMPMetaFactory.getSchemaRegistry();
     
     public XMPExtractor(File file) {
         this.file = file;
@@ -23,8 +23,9 @@ public class XMPExtractor {
         String text = Sanselan.getXmpXml(file);
         System.out.println(text);
         XMPMeta meta = XMPMetaFactory.parseFromString(text);
-        registry.registerNamespace("ns:meta/", "adobe");
-        meta.getPropertyString("adobe:ns:meta/", "dc:identifier");
+        //registry.registerNamespace("http://purl.org/dc/elements/1.1/", "dc");
+        String dc = "http://purl.org/dc/elements/1.1/";
+        System.out.println(meta.getPropertyString("dc", "identifier"));
         
     }
     
