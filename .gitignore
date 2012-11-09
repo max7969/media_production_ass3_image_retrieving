@@ -1,0 +1,10 @@
+*.DS_Store
+*.project
+*.classpath
+*~
+*.lock
+*.swp
+*.out
+*.class
+.settings
+.metadata
