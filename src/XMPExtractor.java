@@ -25,7 +25,7 @@ public class XMPExtractor {
         XMPMeta meta = XMPMetaFactory.parseFromString(text);
         //registry.registerNamespace("http://purl.org/dc/elements/1.1/", "dc");
         String dc = "http://purl.org/dc/elements/1.1/";
-        System.out.println(meta.getPropertyString("dc", "identifier"));
+        System.out.println(meta.getPropertyString(dc, "identifier"));
         
     }
     
