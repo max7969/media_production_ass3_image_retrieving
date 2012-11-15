@@ -2,6 +2,8 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileFilter;
 import java.io.IOException;
+import java.util.Map;
+import java.util.Set;
 
 import javax.imageio.ImageIO;
 
@@ -29,8 +31,9 @@ import com.adobe.xmp.XMPMetaFactory;
 
 public class ImageIndexer {
     
-    private static String m_imagePath = "./mpup_part3_images";
-    private static String m_indexPath = m_imagePath+"/lire_index";
+    private static String M_IMAGEPATH = "./mpup_part3_images";
+    private static String M_INDEXPATH = M_IMAGEPATH+"/lire_index";
+    private static Map<String, String> M_DCIDENTIFIERS;
     
     public static void imageSearch(String imageToSearch, String indexPath) {
         IndexReader ir = null;
@@ -88,8 +91,8 @@ public class ImageIndexer {
         if(!IndexReader.indexExists(FSDirectory.open(lire_indexFolder))) 
         {
             builder = new ChainedDocumentBuilder();
-            // Adda MPEG-7 Color Layout descritor -based builder
-            builder.addBuilder(new ColorLayoutDocumentBuilder());
+            // Add a MPEG-7 Color Layout descriptor -based builder
+            //builder.addBuilder(new ColorLayoutDocumentBuilder());
             
             builder.addBuilder(DocumentBuilderFactory.getColorLayoutBuilder());
             lire_indexFolder.mkdirs();
@@ -153,8 +156,8 @@ public class ImageIndexer {
     public static void main(String[] args) {
         try 
         {
-            ImageIndexer.imageIndexer(m_imagePath);
-            ImageIndexer.imageSearch(m_imagePath+"/ff57944d-6c56-4e44-8258-57e0526de687.jpg", m_indexPath);
+            ImageIndexer.imageIndexer(M_IMAGEPATH);
+            ImageIndexer.imageSearch(M_IMAGEPATH+"/ff57944d-6c56-4e44-8258-57e0526de687.jpg", M_INDEXPATH);
         }
         catch (Exception e) 
         {
