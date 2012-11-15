@@ -24,8 +24,8 @@ public class XMPExtractor {
         System.out.println(text);
         XMPMeta meta = XMPMetaFactory.parseFromString(text);
         registry.registerNamespace("ns:meta/", "adobe");
-        meta.getPropertyString("adobe:ns:meta/", "dc:identifier");
+        System.out.print(meta.toString());
+        System.out.println(meta.getPropertyString("ns:meta/", "identifier"));
         
     }
-    
 }
