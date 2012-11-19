@@ -11,7 +11,6 @@ import net.semanticmetadata.lire.ImageSearchHits;
 import net.semanticmetadata.lire.ImageSearcher;
 import net.semanticmetadata.lire.ImageSearcherFactory;
 import net.semanticmetadata.lire.impl.ChainedDocumentBuilder;
-import net.semanticmetadata.lire.impl.ColorLayoutDocumentBuilder;
 
 import org.apache.lucene.analysis.WhitespaceAnalyzer;
 import org.apache.lucene.document.Document;
@@ -32,7 +31,12 @@ public class ImageIndexer {
     private static String m_imagePath = "./mpup_part3_images";
     private static String m_indexPath = m_imagePath+"/lire_index";
     
-    public static void imageSearch(String imageToSearch, String indexPath) {
+    private static String COLOR_LAYOUT = "COLOR_LAYOUT";
+    private static String CEDD = "CEDD";
+    private static String FCTHI = "FCTHI";
+    private static String JPEGC = "JPEGC";
+    
+    public static void imageSearch(String imageToSearch, String indexPath, String builderType) {
         IndexReader ir = null;
         ImageSearcher imgSearcher = null;
         BufferedImage img = null;
@@ -43,7 +47,15 @@ public class ImageIndexer {
         try
         {
             ir = IndexReader.open(FSDirectory.open(new File(indexPath)));
-            imgSearcher = ImageSearcherFactory.createColorLayoutImageSearcher(numberOfImages);
+            if (builderType.equals(COLOR_LAYOUT)) {
+            	imgSearcher = ImageSearcherFactory.createColorLayoutImageSearcher(numberOfImages);
+            } else if (builderType.equals(CEDD)) {
+            	imgSearcher = ImageSearcherFactory.createCEDDImageSearcher(numberOfImages);
+            } else if(builderType.equals(FCTHI)) {
+            	imgSearcher = ImageSearcherFactory.createFCTHImageSearcher(numberOfImages);
+            } else if(builderType.equals(JPEGC)) {
+            	imgSearcher = ImageSearcherFactory.createJpegCoefficientHistogramImageSearcher(numberOfImages);
+            }
             img = ImageIO.read(new File(imageToSearch));
             imageOk = true;
         }
@@ -71,7 +83,7 @@ public class ImageIndexer {
         }
     }
     
-    public static void imageIndexer(String folderPath) throws IOException, ImageReadException, XMPException {
+	public static void imageIndexer(String folderPath, String builderType) throws IOException, ImageReadException, XMPException {
         
         File[] imageFiles = new File(folderPath).listFiles(new FileFilter() {
             
@@ -87,11 +99,18 @@ public class ImageIndexer {
         File lire_indexFolder = new File(folderPath, "lire_index");
         if(!IndexReader.indexExists(FSDirectory.open(lire_indexFolder))) 
         {
-            builder = new ChainedDocumentBuilder();
+        	builder = new ChainedDocumentBuilder();
+
+        	if(builderType.equals(COLOR_LAYOUT)) {
+        		builder.addBuilder(DocumentBuilderFactory.getColorLayoutBuilder());
+        	} else if (builderType.equals(CEDD)) {
+        		builder.addBuilder(DocumentBuilderFactory.getCEDDDocumentBuilder());
+        	} else if (builderType.equals(FCTHI)) {
+        		builder.addBuilder(DocumentBuilderFactory.getFCTHDocumentBuilder());
+        	} else if (builderType.equals(JPEGC)) {
+        		builder.addBuilder(DocumentBuilderFactory.getJpegCoefficientHistogramDocumentBuilder());
+        	}
             // Adda MPEG-7 Color Layout descritor -based builder
-            builder.addBuilder(new ColorLayoutDocumentBuilder());
-            
-            builder.addBuilder(DocumentBuilderFactory.getColorLayoutBuilder());
             lire_indexFolder.mkdirs();
             IndexWriterConfig conf = new IndexWriterConfig(Version.LUCENE_36, new WhitespaceAnalyzer(Version.LUCENE_36));
             IndexWriter iw  = new IndexWriter(FSDirectory.open(lire_indexFolder), conf);
@@ -153,8 +172,8 @@ public class ImageIndexer {
     public static void main(String[] args) {
         try 
         {
-            ImageIndexer.imageIndexer(m_imagePath);
-            ImageIndexer.imageSearch(m_imagePath+"/ff57944d-6c56-4e44-8258-57e0526de687.jpg", m_indexPath);
+            ImageIndexer.imageIndexer(m_imagePath, COLOR_LAYOUT);
+            ImageIndexer.imageSearch(m_imagePath+"/ff57944d-6c56-4e44-8258-57e0526de687.jpg", m_indexPath, COLOR_LAYOUT);
         }
         catch (Exception e) 
         {
