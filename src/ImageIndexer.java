@@ -2,6 +2,10 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileFilter;
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
 
 import javax.imageio.ImageIO;
 
@@ -28,15 +32,17 @@ import com.adobe.xmp.XMPMetaFactory;
 
 public class ImageIndexer {
     
-    private static String m_imagePath = "./mpup_part3_images";
-    private static String m_indexPath = m_imagePath+"/lire_index";
+    private static String M_IMAGEPATH = "./mpup_part3_images";
+    private static String M_INDEXPATH = M_IMAGEPATH+"/lire_index";
+    private static Map<File, String> M_DCIDENTIFIERS = new HashMap<File, String>(); // stores the dc:identifier of an image (if it is available)
     
     private static String COLOR_LAYOUT = "COLOR_LAYOUT";
     private static String CEDD = "CEDD";
     private static String FCTHI = "FCTHI";
     private static String JPEGC = "JPEGC";
     
-    public static void imageSearch(String imageToSearch, String indexPath, String builderType) {
+
+    public static void imageSearch(String imageToSearch, String indexPath, String builderType) throws ImageReadException, IOException, XMPException {
         IndexReader ir = null;
         ImageSearcher imgSearcher = null;
         BufferedImage img = null;
@@ -63,23 +69,49 @@ public class ImageIndexer {
         {
             e.printStackTrace();
         }
+        // get the dc:identifier of the image provided as the search keyword (returns null if not found)
+        String dc_id = ImageIndexer.getDcIdentifier(imageToSearch);
+        
+        // if the image has dc:identifier, lets loop through other images for matching dc:identifiers
+        if(dc_id != null)
+        {
+            Set<File> hits = new HashSet<File>(); 
+            for(File imgFile : M_DCIDENTIFIERS.keySet())
+            {
+                // check if dc_id matches the dc:identifier of any other (metadata enhanced) image (imgName)
+                if(M_DCIDENTIFIERS.get(imgFile).equals(dc_id) && !imageToSearch.contains(imgFile.getName()))
+                {
+                    hits.add(imgFile);
+                }
+            }
+            if(hits.size() > 0)
+            {
+                System.out.println("Matching dc:identifier value(s) for "+new File(imageToSearch).getName());
+                for(File hit : hits)
+                {
+                    System.out.println(hit.getName());
+                }
+                System.out.println("\nFound matching dc:identifier(s). Skipping the index search...\n");
+                return; // no need to search the indexed images
+            }
+            System.out.println("Did not find any matching dc:identifiers. Continuing with the index search...");
+        }
+        
+        ir = IndexReader.open(FSDirectory.open(new File(indexPath)));
+        imgSearcher = ImageSearcherFactory.createColorLayoutImageSearcher(numberOfImages);
+        img = ImageIO.read(new File(imageToSearch));
+        imageOk = true;
         
         if(imageOk)
         {
             ImageSearchHits hits = null;
-            try
+            hits = imgSearcher.search(img, ir);
+            for(int i = 0; i < hits.length(); i++)
             {
-                hits = imgSearcher.search(img, ir);
-                for(int i = 0; i < hits.length(); i++)
-                {
-                    String fileName = hits.doc(i).getValues(DocumentBuilder.FIELD_NAME_IDENTIFIER)[0];
-                    System.out.println(hits.score(i)+": \t"+fileName);
-                }
+                String fileName = hits.doc(i).getValues(DocumentBuilder.FIELD_NAME_IDENTIFIER)[0];
+                System.out.println(String.format("%1.8f:\t%s",hits.score(i), new File(fileName).getName()));
             }
-            catch(Exception e)
-            {
-                
-            }
+            System.out.println("");
         }
     }
     
@@ -94,9 +126,22 @@ public class ImageIndexer {
             } 
         });
         
+        // get available dc:identifiers and store them to M_DCIDENTIFIERS
+        System.out.println("Getting dc:identifiers...");
+        for (File imageFile : imageFiles) 
+        {
+            String id = getDcIdentifier(imageFile);
+            if(id != null && id.length() > 0)
+            {
+                M_DCIDENTIFIERS.put(imageFile, id); // storing found dc:identifiers
+            }
+        }
+        
         // Create a LIRE DocumentBuilder
         ChainedDocumentBuilder builder = null;
         File lire_indexFolder = new File(folderPath, "lire_index");
+        
+        // if index doesn't exists...
         if(!IndexReader.indexExists(FSDirectory.open(lire_indexFolder))) 
         {
         	builder = new ChainedDocumentBuilder();
@@ -118,35 +163,21 @@ public class ImageIndexer {
             // Loop image files
             for (File imageFile : imageFiles) 
             {
-                System.out.println("Processing image "+imageFile.getAbsolutePath());
-                String id = extractXMPMetadata(imageFile);
-                boolean processImage = false;
-                
-                if(id != null && id.length() > 0)
-                {
-                    
-                }
-                else // if metadata is not available...
-                {
-                    try 
-                    {
-                        BufferedImage img = ImageIO.read(imageFile);
-                        Document document = builder.createDocument(img, imageFile.getAbsolutePath());
-                        iw.addDocument(document);
-                    }
-                    catch(Exception e)
-                    {
-                        e.printStackTrace();
-                    }
+                System.out.println("Processing image "+imageFile.getName());
 
-                }
+                BufferedImage img = ImageIO.read(imageFile);
+                Document document = builder.createDocument(img, imageFile.getAbsolutePath());
+                iw.addDocument(document);
             }
             iw.close();
         }
-        
     }
     
-    private static String extractXMPMetadata(File imageFile) throws ImageReadException, IOException, XMPException {
+    private static String getDcIdentifier(String imageFile) throws ImageReadException, IOException, XMPException {
+        return getDcIdentifier(new File(imageFile));
+    }
+    
+    private static String getDcIdentifier(File imageFile) throws ImageReadException, IOException, XMPException {
         String xmpString = null;
         XMPMeta xmp = null;
         
@@ -161,19 +192,17 @@ public class ImageIndexer {
                 return xmp.getPropertyString(dc, "identifier");
             }
         } 
-        catch(Exception e) 
-        {
-            e.printStackTrace();
-        }
+        catch(Exception e) {}
         return null;
     }
     
     
     public static void main(String[] args) {
+        
         try 
         {
-            ImageIndexer.imageIndexer(m_imagePath, COLOR_LAYOUT);
-            ImageIndexer.imageSearch(m_imagePath+"/ff57944d-6c56-4e44-8258-57e0526de687.jpg", m_indexPath, COLOR_LAYOUT);
+            ImageIndexer.imageIndexer(M_INDEXPATH, COLOR_LAYOUT);
+            ImageIndexer.imageSearch(M_INDEXPATH+"/ff57944d-6c56-4e44-8258-57e0526de687.jpg", M_INDEXPATH, COLOR_LAYOUT);
         }
         catch (Exception e) 
         {
