@@ -299,7 +299,7 @@ public class ImageIndexer {
         try 
         {
         	System.out.println("LOADING NEWSITEMS FROM PACKAGE ....");
-        	newsItems = PackageReader.getNewsItemFromPackage(M_IMAGEPATH+"/" + packageName);
+        	newsItems = PackageReader.getNewsItemFromPackage(packageName);
         	System.out.println("INDEXING IMAGES ....");
             ImageIndexer.imageIndexer(M_IMAGEPATH, indexer, fullIndexer);
             

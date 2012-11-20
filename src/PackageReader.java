@@ -28,7 +28,7 @@ public class PackageReader {
 		} catch (ParserConfigurationException e) {
 			e.printStackTrace();
 		}
-		
+		if(documentBuilder == null ) { System.out.println("assadsad"); }
 		// Reads all the XML documents listed
 		Document xmlDocument = null;
 		XPath xpath = XPathFactory.newInstance().newXPath();
@@ -36,6 +36,7 @@ public class PackageReader {
 		
 		try {
 			xmlDocument = documentBuilder.parse(packageFile);
+			System.out.println(xmlDocument.getTextContent());
 		} catch (IOException e) {
 			e.printStackTrace();
 		} catch (SAXException e) {

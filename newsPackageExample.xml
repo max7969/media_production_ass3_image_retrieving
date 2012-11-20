@@ -1,0 +1,1214 @@
+<packageItem xmlns="http://iptc.org/std/nar/2006-10-01/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" conformance="power" guid="" standard="NewsML-G2" standardversion="2.8" xsi:schemaLocation="http://iptc.org/std/nar/2006-10-01/../specification/NewsML-G2_2.9-spec-All-Power.xsd">
+	<itemMeta>
+		<itemClass qcode="ninat:composite"/>
+		<provider literal="Aalto University Group Media"/>
+		<versionCreated>Tue Nov 20 22:37:42 EET 2012</versionCreated>
+		<firstCreated>Tue Nov 20 22:37:42 EET 2012</firstCreated>
+		<pubStatus qcode="stat:usable"/>
+		<generator versioninfo="1.0">Package Generator v1</generator>
+		<profile versioninfo="1.0">ranked_idref_list</profile>
+		<service qcode="svc:aaltotop">
+			<name>Aalto University</name>
+		</service>
+		<title>MY PACKAGE</title>
+		<edNote>DEFINE A NOTE</edNote>
+		<signal qcode="act:replacePrev"/>
+		<link rel="NO TAG" residref="irel:previousVersion" version="1"/>
+	</itemMeta>
+	<contentMeta>
+		<contributor jobtitle="staffjobs:cpe" qcode="mystaff:MAndre">
+			<name>Maxime Andre</name>
+			<name>Chief Packaging Editor</name>
+			<definition validto="2013-12-31T17:30:00Z">Duty Packaging Editor</definition>
+			<note validto="2013-12-31T17:30:00Z">Available everyday</note>
+		</contributor>
+		<headline xml:lang=""/>
+	</contentMeta>
+	<groupSet root="root">
+		<group id="root" role="group:root">
+			<groupRef idref="G2"/>
+		</group>
+		<group id="G2" role="group:package">
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120727:95867108" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-07-27T18:01:20</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Neuvottelut asekauppasopimuksesta venymässä takarajaan asti</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120727:95867244" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-07-27T18:37:35</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Syyrian armeijan suurhyökkäys Aleppoon häämöttää</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120727:95866785" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-07-27T18:44:23</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>EIT ei ole saanut valitusta Halla-aholta</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120727:95867605" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-07-27T19:43:30</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Obama ja Romney houkuttelevat kilpaa juutalaisäänestäjiä</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120727:95867298" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-07-27T20:22:27</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>VM salasi tuntuvan osan Espanjan vakuussopimuksesta</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120727:95864781" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-07-27T20:23:06</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Nuorisojärjestöjen jäsenmäärien tarkastus loppusuoralla </headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120727:95867764" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-07-27T20:27:31</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Syyrian armeijan suurhyökkäys Aleppoon alkamassa</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120727:95867968" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-07-27T21:21:54</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Kapinalliset pidättivät hallituksen joukkoja Syyriassa</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120727:95868042" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-07-27T21:34:02</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Syyrian armeijan suurhyökkäys Aleppoon alkamassa</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120728:95868895" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-07-28T03:53:14</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>YK-maat eivät päässeet sopuun asekaupan rajoitteista</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120728:95869345" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-07-28T08:05:54</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>USA ja Venäjä saivat sapiskaa asekauppasopimuksen kaatumisesta</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120728:95869426" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-07-28T08:10:24</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Tanska lähtee tutkimusretkelle arktisen aluevaateensa tueksi</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120728:95867157" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-07-28T09:20:48</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Lehdet: Kaksi kolmesta suomalaisesta pitäisi euron</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120728:95867134" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-07-28T09:28:44</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Lehdet: Kaksi kolmesta suomalaisesta pitäisi euron</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120728:95866671" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-07-28T09:30:25</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Olympiasankareista on harvoin eturivin poliitikoiksi</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120728:95869864" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-07-28T12:33:55</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Iran yrittää kiertää talouspakotteita omilla vakuutuksillaan</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120728:95868896" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-07-28T15:00:32</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Asekauppasopimus kaatui suurten viivyttelyyn</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120728:95869764" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-07-28T15:01:13</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Uusi yritys todennäköisesti lokakuussa</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120728:95866991" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-07-28T16:20:16</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Gustafsson haluaa tasa-arvoa koulutukseen</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120728:95870874" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-07-28T18:16:33</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>HS: Kreikan euroero toisi Suomelle yli 5 miljardin menetykset</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120728:95871686" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-07-28T21:13:07</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Italian rannikkovartiosto pelasti kymmeniä pakolaisia</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120729:95871788" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-07-29T02:05:20</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Romaniassa äänestetään presidentin kohtalosta</headline>
+				<description role="drol:summary">Basescua syytetään toimivaltuuksiensa ylittämisestä.</description>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120729:95866690" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-07-29T04:50:24</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Kaasusumutinlupien hakeminen vähentynyt</headline>
+				<description role="drol:summary">Keskiviikkona 25.7. soitettu rikostorjuntayksikön Heikki Lausmaalle ja kysytty rikosten lisääntymisestä. Välitti kysymyksen edelleen Vesa Tikkalalle, joka tutkii asiaa. Soitettava Tikkalalle to 26.7. iltapäivällä. P.071 878 1813</description>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120729:95866614" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-07-29T04:51:29</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Kaasusumutinlupien hakeminen vähentynyt</headline>
+				<description role="drol:summary">Keskiviikkona 25.7. soitettu rikostorjuntayksikön Heikki Lausmaalle ja kysytty rikosten lisääntymisestä. Välitti kysymyksen edelleen Vesa Tikkalalle, joka tutkii asiaa. Soitettava Tikkalalle to 26.7. iltapäivällä. P.071 878 1813</description>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120729:95873239" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-07-29T08:37:29</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Romanialaiset äänestävät presidenttinsä kohtalosta</headline>
+				<description role="drol:summary">Basescua syytetään toimivaltuuksiensa ylittämisestä.</description>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120729:95873272" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-07-29T08:56:42</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Guardian: Loikkarikenraali ennustaa Syyrian armeijan romahtavan</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120729:95873336" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-07-29T09:55:48</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Lehti: USA valaisi Iran-iskusuunnitelmiaan Israelille</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120729:95873425" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-07-29T11:04:55</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Kysely: Saksalaisten mielestä maalla menisi paremmin ilman euroa</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120729:95869863" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-07-29T11:20:30</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Kaasusumuttimen käyttö rikoksissa ei ole yleistynyt</headline>
+				<description role="drol:summary">Keskiviikkona 25.7. soitettu rikostorjuntayksikön Heikki Lausmaalle ja kysytty rikosten lisääntymisestä. Välitti kysymyksen edelleen Vesa Tikkalalle, joka tutkii asiaa. Soitettava Tikkalalle to 26.7. iltapäivällä. P.071 878 1813</description>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120729:95873469" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-07-29T11:33:38</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Romney antaisi tukensa Israelin iskulle Iraniin</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120729:95873498" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-07-29T12:15:50</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Lehti: USA valaisi Iran-iskusuunnitelmiaan Israelille</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120729:95873710" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-07-29T13:43:08</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>P-Korea tyrmäsi huhut maan suurista uudistuksista</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120729:95857151" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-07-29T15:38:26</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Huippukokit paljastavat maailmanjohtajien inhokkiruokia</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120729:95874969" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-07-29T19:51:28</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Romanialaiset äänestivät presidenttinsä kohtalosta</headline>
+				<description role="drol:summary">Basescua syytetään toimivaltuuksiensa ylittämisestä.</description>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120729:95875338" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-07-29T21:07:31</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Jordania avasi ensimmäisen leirin Syyrian pakolaisille</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120729:95875767" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-07-29T22:15:36</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Vähäinen äänestysinto näytti pelastavan Romanian presidentin</headline>
+				<description role="drol:summary">Basescua syytetään toimivaltuuksiensa ylittämisestä.</description>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120730:95876511" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-07-30T01:15:38</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Romanian presidentti päässee pälkähästä</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120730:95875519" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-07-30T02:12:03</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Pussy Riot -naispunkkarien oikeudenkäynti alkaa</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120730:95876941" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-07-30T03:35:00</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Romanian presidentti välttänee syytteen </headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120730:95876512" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-07-30T04:20:22</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Turun Sanomat: Suomella 150 miljoonan saatavat miina-aluksista</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120730:95877288" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-07-30T07:52:11</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Ruotsin Afganistan-joukkojen tulkit anovat turvapaikkaa</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120730:95877375" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-07-30T08:47:37</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Lehti: Jälleenrakentamisen hyödyt Afganistanissa kyseenalaiset</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120730:95877655" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-07-30T10:32:02</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Romanian presidentti pääsi pälkähästä</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120730:95877701" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-07-30T10:44:39</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Ruotsin ja Suomen Afganistan-tulkit anovat turvapaikkaa</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120730:95877773" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-07-30T11:20:11</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Putinia arvostelleet naispunkkarit oikeudessa Venäjällä</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120730:95878058" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-07-30T12:39:20</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Oikeuskansleri tutkii EVM-sotkun</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120730:95877302" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-07-30T17:15:20</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>EVM-sopimus hallituksen esityksen liitteenä jo huhtikuussa</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120730:95879010" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-07-30T17:22:09</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Kreikka pyrkii saamaan verotuloja Sveitsistä</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120730:95880336" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-07-30T20:38:52</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Niinistö ei usko Suomen olympiaisännyyteen</headline>
+				<description role="drol:summary">Presidenttipari osallistuu olympialaisten avajaisiin Olympiastadionilla sekä niitä edeltävälle kuningattaren vastaanotolle Buckinghamin palatsissa perjantaina 27. heinäkuuta. Kilpailujen ensimmäisten päivien ajan presidentti Niinistö seuraa suomalaisurheilijoiden suorituksia eri lajeissa ja vierailee kisakylässä tapaamassa urheilijoita. 
+
+Lisäksi presidentti Niinistö vierailee Lontoon merimieskirkossa, jossa hän tapaa alueella asuvia suomalaisia, sekä osallistuu olympialaisten Suomi-vastaanotolle.</description>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120731:95882782" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-07-31T10:39:15</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Poliisijohtaja Ylelle: En ole poistamassa rikollisten tukia</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120731:95884051" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-07-31T15:42:08</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Hirvisaari homokirjoituksestaan: Olen kanava ja äänitorvi</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120731:95883270" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-07-31T16:00:56</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Rikollisten tukien karsimisen uskotaan johtavan uusiin ongelmiin</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120731:95884496" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-07-31T16:24:21</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Kuntavaaleissa ei tarvitse olla Suomen kansalainen</headline>
+				<description role="drol:summary">Monikulttuurijärjestöjen yhteistyöverkosto Moniheli järjestää tiedotustilaisuuden maahanmuuttajien osallistumisesta kuntavaaleihin. Tilaisuudessa kuullaan muiden muassa oikeusministeriön vaaliasiantuntijaa sekä Monihelin projektivastaavia.
+
+Moniheli pyrkii edistämään maahanmuuttajien tietoisuutta paikallishallinnon päätöksenteosta. Euroopan unionin kotouttamisrahaston rahoittaman Monihelin iCount-projektin päätavoite on nostaa maahanmuuttajien osallistumista lokakuun 2012 kuntavaaleissa.
+
+Suomessa asuvien maahanmuuttajien osallistuminen vaaleihin on ollut hyvin laimeaa. Esimerkiksi Ruotsissa ja Norjassa noin 60 prosenttia maahanmuuttajista äänestää kuntavaaleissa, kun vastaava luku Suomessa on vain 20 prosenttia.</description>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120731:95883436" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-07-31T16:28:19</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Pankit alkaneet paljastaa tietojaan korkomanipuloinnista</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120731:95883948" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-07-31T16:40:01</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Aleksej ja Seida uskovat läpimenoon kuntavaaleissa</headline>
+				<description role="drol:summary">Monikulttuurijärjestöjen yhteistyöverkosto Moniheli järjestää tiedotustilaisuuden maahanmuuttajien osallistumisesta kuntavaaleihin. Tilaisuudessa kuullaan muiden muassa oikeusministeriön vaaliasiantuntijaa sekä Monihelin projektivastaavia.
+
+Moniheli pyrkii edistämään maahanmuuttajien tietoisuutta paikallishallinnon päätöksenteosta. Euroopan unionin kotouttamisrahaston rahoittaman Monihelin iCount-projektin päätavoite on nostaa maahanmuuttajien osallistumista lokakuun 2012 kuntavaaleissa.
+
+Suomessa asuvien maahanmuuttajien osallistuminen vaaleihin on ollut hyvin laimeaa. Esimerkiksi Ruotsissa ja Norjassa noin 60 prosenttia maahanmuuttajista äänestää kuntavaaleissa, kun vastaava luku Suomessa on vain 20 prosenttia.</description>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120731:95884691" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-07-31T17:03:47</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Katainen Ylessä: Eurokriisi ei tuo Suomeen leikkauksia</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120731:95884369" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-07-31T17:15:36</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Mitä Robin Lardot täsmällisesti sanoi?</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120731:95884690" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-07-31T17:15:46</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Katainen Ylessä: Eurokriisi ei tuo Suomeen leikkauksia</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120731:95884927" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-07-31T17:44:54</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Kreikka varoittaa: Käteisvarat kohta lopussa</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120731:95884906" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-07-31T17:48:19</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Katainen vie Montin saunaan, ei tarjoa saunamakkaraa</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120731:95884738" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-07-31T17:52:43</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Poliisiylijohtaja: Yhteiskunnan ei tulisi tukea rikollisuutta</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120731:95884973" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-07-31T17:57:57</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Poliisiylijohtaja: Sosiaalitukien ei tulisi edistää rikoksia</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120731:95885116" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-07-31T18:22:59</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Presidentti Niinistö vierailee Haminassa ja Pyhtäällä</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120731:95885166" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-07-31T18:45:35</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Poliisiylijohtaja jättäisi rikollisille lapsilisät</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120801:95884490" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-08-01T01:45:15</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Italian pääministeri vakuuttamaan Suomen johtoa</headline>
+				<description role="drol:summary">EI JULKISUUTEEN
+
+13.30 Keskustelut ja lounas Pääministeri Kataisen kanssa Kesärannassa (Meilahti 1, Helsinki). Alussa kuvausmahdollisuus.
+
+15.30 Pääministereiden yhteinen tiedotustilaisuus, Kesäranta.
+
+16.30 Eduskunnan puhemies Eero Heinäluoman tapaaminen eduskunnassa. Alussa kuvausmahdollisuus. Eduskuntaan saapuvia kuvaajia pyydetään ilmoittautumaan osoitteeseen tiedotus@eduskunta.fi viimeistään tiistaina 31.7.
+
+19.00 Työillallinen tasavallan presidentti Sauli Niinistön kanssa Mäntyniemessä. Alussa kuvausmahdollisuus.Ilmoittautumiset keskiviikkoon 1.8. klo 10 mennessä tasavallan presidentin kansliaan, p. (09) 661133 / Matti Porre tai matti.porre@tpk.fi. Kuvaajia pyydetään saapumaan turvatarkastukseen Mäntyniemen portille 45 minuuttia ennen tilaisuuden alkua.</description>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120801:95887541" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-08-01T04:39:21</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Monti HS:lle: Italia voi tarvita tauon korkeista koroistaan</headline>
+				<description role="drol:summary">EI JULKISUUTEEN
+
+13.30 Keskustelut ja lounas Pääministeri Kataisen kanssa Kesärannassa (Meilahti 1, Helsinki). Alussa kuvausmahdollisuus.
+
+15.30 Pääministereiden yhteinen tiedotustilaisuus, Kesäranta.
+
+16.30 Eduskunnan puhemies Eero Heinäluoman tapaaminen eduskunnassa. Alussa kuvausmahdollisuus. Eduskuntaan saapuvia kuvaajia pyydetään ilmoittautumaan osoitteeseen tiedotus@eduskunta.fi viimeistään tiistaina 31.7.
+
+19.00 Työillallinen tasavallan presidentti Sauli Niinistön kanssa Mäntyniemessä. Alussa kuvausmahdollisuus.Ilmoittautumiset keskiviikkoon 1.8. klo 10 mennessä tasavallan presidentin kansliaan, p. (09) 661133 / Matti Porre tai matti.porre@tpk.fi. Kuvaajia pyydetään saapumaan turvatarkastukseen Mäntyniemen portille 45 minuuttia ennen tilaisuuden alkua.</description>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120801:95887553" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-08-01T05:03:20</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Monti HS:lle: Italia voi tarvita tauon korkeista koroistaan</headline>
+				<description role="drol:summary">EI JULKISUUTEEN
+
+13.30 Keskustelut ja lounas Pääministeri Kataisen kanssa Kesärannassa (Meilahti 1, Helsinki). Alussa kuvausmahdollisuus.
+
+15.30 Pääministereiden yhteinen tiedotustilaisuus, Kesäranta.
+
+16.30 Eduskunnan puhemies Eero Heinäluoman tapaaminen eduskunnassa. Alussa kuvausmahdollisuus. Eduskuntaan saapuvia kuvaajia pyydetään ilmoittautumaan osoitteeseen tiedotus@eduskunta.fi viimeistään tiistaina 31.7.
+
+19.00 Työillallinen tasavallan presidentti Sauli Niinistön kanssa Mäntyniemessä. Alussa kuvausmahdollisuus.Ilmoittautumiset keskiviikkoon 1.8. klo 10 mennessä tasavallan presidentin kansliaan, p. (09) 661133 / Matti Porre tai matti.porre@tpk.fi. Kuvaajia pyydetään saapumaan turvatarkastukseen Mäntyniemen portille 45 minuuttia ennen tilaisuuden alkua.</description>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120801:95888342" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-08-01T09:35:13</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Keskustan Sipilä: Euron tulevaisuus selvitettävä</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120801:95888405" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-08-01T15:48:52</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Kontulan esille nostama insestipykälä pohdinnassa aika ajoin</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120801:95890499" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-08-01T17:47:05</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Monti: Italia ei tarvitse apua, markkinat tarvitsevat</headline>
+				<description role="drol:summary">Kdeski &lt;Kdeski@stt-lehtikuva.fi&gt;</description>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120801:95890739" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-08-01T18:42:29</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Arhinmäki: Kommentit korkeakulttuurin vastaisuudestani valitettavia</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120801:95890601" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-08-01T18:56:01</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Nöyrä Monti kävi hakemassa ymmärrystä</headline>
+				<description role="drol:summary">Kdeski &lt;Kdeski@stt-lehtikuva.fi&gt;</description>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120801:95888704" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-08-01T18:59:33</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Katainen keskustalle: Hyvä valmistella asioita kansalaiskeskusteluun</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120801:95891296" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-08-01T20:19:37</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Arhinmäki: Kommentit korkeakulttuurin vastaisuudestani valitettavia</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120802:95892259" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-08-02T00:51:22</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Italian Monti puhuu tänään EU:sta ja eurosta</headline>
+				<description role="drol:summary">Italian pääministeri Mario Monti puhuu EU:sta ja eurosta Elinkeinoelämän keskusliiton EK:n ja Ulkopoliittisen instituutin UPIn järjestämässä seminaarissa.</description>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120802:95893805" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-08-02T09:16:41</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Monti suomalaisille: Italia velkaa itselleen</headline>
+				<description role="drol:summary">Kdeski &lt;Kdeski@stt-lehtikuva.fi&gt;</description>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120802:95894272" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-08-02T11:52:06</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Monti suomalaisille: Italia velkaa itselleen</headline>
+				<description role="drol:summary">Kdeski &lt;Kdeski@stt-lehtikuva.fi&gt;</description>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120802:95893796" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-08-02T13:04:23</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Monti arvioi EU:n tehneen hyvää pohjatyötä talouskasvun eteen</headline>
+				<description role="drol:summary">Kdeski &lt;Kdeski@stt-lehtikuva.fi&gt;</description>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120802:95895306" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-08-02T15:31:16</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Sipilä haluaa keskustan suurimmaksi kuntavaaleissa</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120802:95895303" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-08-02T15:38:23</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Sipilä haluaa keskustan suurimmaksi kuntavaaleissa</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120802:95894137" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-08-02T17:34:59</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Kokoomuksen Orpo korottaisi kotitalousvähennystä</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120801:95895916" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-08-02T18:35:05</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Vasemmistoliitto kiivaili peruspalvelujen puolesta</headline>
+				<description role="drol:summary">Vasemmistoliiton hallitusryhmä vierailee Lapissa 1.–3.8. Hallitusryhmän lehdistölounas ajankohtaisista asioista pidetään 2.8., paikalla mm. ministerit Arhinmäki ja Kyllönen sekä eduskuntaryhmän puheenjohtaja Lapintie.</description>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120802:95896232" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-08-02T19:01:07</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Arhinmäki on kulttuuriministeri isolla C:llä</headline>
+				<description role="drol:summary">Vasemmistoliiton hallitusryhmä  jalkautui kansan keskuuteen Lapissa. Rovaniemellä liikennenministeri Kyllönen uskaltautui paikallisen houltamon baariin puhumaan liikenteestä.</description>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120802:95896888" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-08-02T20:40:56</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Niinistö huolissaan EKP:n demokratiavajeesta</headline>
+				<description role="drol:summary">EMBARGOTIETOA: 
+
+Presidentti Sauli niinistö vierailee Googlen Haminan palvelinkeskuksessa. Ennen tiedotustilaisuutta presidentti käy tutustumiskierroksella palvelinkeskuksessa.
+
+Myöhemmin järjestettävässä tiedotustilaisuudessa kerrotaan Googlen mukaan kohtalaisen merkittävästä muutoksesta yhtiön toiminnassa. </description>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120801:95896102" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-08-03T14:17:57</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Ylivertaisen Soinin puhetaito ei niin vain tartu</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120804:95900334" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-08-04T08:30:05</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Professori: Talous nousemassa Suomen ulkopolitiikan keskiöön</headline>
+				<description role="drol:summary">Mihin ulkoministeri Erkki Tuomioja on matkustanut tällä hallituskaudella? Mitä kertoo Suomen ulkopolitiikan suunnasta ja muutoksesta.</description>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120804:95904541" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-08-04T13:29:03</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Ylen gallup: Perussuomalaiset uudessa nousussa</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120804:95904598" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-08-04T13:48:04</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Ylen gallup: Perussuomalaiset uudessa nousussa</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120804:95904498" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-08-04T14:20:03</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Ylen gallup: Perussuomalaiset uudessa nousussa</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120804:95905042" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-08-04T16:22:23</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Saarikko: Kokoomus jojoilee kotitalousvähennyksessä</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120804:95905935" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-08-04T19:52:48</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Yle: Katainen ei huolestunut SDP:n kiristä</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120805:95899763" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-08-05T19:40:25</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Urpilainen: Nyt pitää varautua pahan päivän varalle</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120805:95901808" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-08-05T19:41:03</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Ministerin mukaan budjettiriiheen mennään taantuman varjossa</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120806:95908409" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-08-06T03:00:22</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Urpilainen: Hoitajakiintiöön ei ole luvattu rahoja</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120806:95908407" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-08-06T03:00:23</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Urpilainen: Hoitajakiintiöön ei ole luvattu rahoja</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120806:95913134" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-08-06T12:43:56</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline/>
+				<description role="drol:summary">Paikalla ovat myös hallinto- ja kuntaministeri Henna Virkkunen ja ministeriön muu johto. Urpilainen on toimittajien tavattavissa lounastauolla maanantaina 6.8. n. klo 12. Neuvottelujen päätyttyä Urpilainen pitää tiedotustilaisuuden Munkkiniemen vierastalolla. Tarkka aika ilmoitetaan myöhemmin.
+</description>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120806:95913181" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-08-06T12:57:25</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Urpilainen: Eurooppalainen taantuma varjostaa budjettia</headline>
+				<description role="drol:summary">Paikalla ovat myös hallinto- ja kuntaministeri Henna Virkkunen ja ministeriön muu johto. Urpilainen on toimittajien tavattavissa lounastauolla maanantaina 6.8. n. klo 12. Neuvottelujen päätyttyä Urpilainen pitää tiedotustilaisuuden Munkkiniemen vierastalolla. Tarkka aika ilmoitetaan myöhemmin.
+</description>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120806:95913209" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-08-06T13:28:59</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Urpilainen: VM heikentää ensi vuoden talousennustetta</headline>
+				<description role="drol:summary">Paikalla ovat myös hallinto- ja kuntaministeri Henna Virkkunen ja ministeriön muu johto. Urpilainen on toimittajien tavattavissa lounastauolla maanantaina 6.8. n. klo 12. Neuvottelujen päätyttyä Urpilainen pitää tiedotustilaisuuden Munkkiniemen vierastalolla. Tarkka aika ilmoitetaan myöhemmin.
+</description>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120806:95913236" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-08-06T16:22:51</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Kilometrikorvauksista ja kotitalousvähennyksestä riidan siemeniä</headline>
+				<description role="drol:summary">Paikalla ovat myös hallinto- ja kuntaministeri Henna Virkkunen ja ministeriön muu johto. Urpilainen on toimittajien tavattavissa lounastauolla maanantaina 6.8. n. klo 12. Neuvottelujen päätyttyä Urpilainen pitää tiedotustilaisuuden Munkkiniemen vierastalolla. Tarkka aika ilmoitetaan myöhemmin.
+</description>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120806:95913443" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-08-06T16:37:05</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Talousviisaat pitävät VM:n ennustetta liian varovaisena</headline>
+				<description role="drol:summary">Paikalla ovat myös hallinto- ja kuntaministeri Henna Virkkunen ja ministeriön muu johto. Urpilainen on toimittajien tavattavissa lounastauolla maanantaina 6.8. n. klo 12. Neuvottelujen päätyttyä Urpilainen pitää tiedotustilaisuuden Munkkiniemen vierastalolla. Tarkka aika ilmoitetaan myöhemmin.
+</description>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120806:95914821" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-08-06T19:12:50</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Kaikkiin varuskuntiin luvassa langaton netti ensi vuonna</headline>
+				<description role="drol:summary">Puolustusministeri Carl Haglund vierailee Kaartin Jääkärirykmentissä Santahaminassa. Hän tutustuu rykmentin toimintaan sekä varusmieskoulutukseen. Varusmieskoulutukseen tutustumisen jälkeen tiedotusvälineet voivat keskustella puolustusministerin kanssa.</description>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120807:95914314" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-08-07T02:00:15</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Urpilainen paljastaa tänään ministeriönsä budjettiehdotuksen</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120807:95918272" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-08-07T13:33:56</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Jaakonsaari Montille: Parlamentti ei ole eurokriisin sivujuonne</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120806:95918021" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-08-07T13:44:47</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Näin budjetin teko etenee</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120807:95918569" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-08-07T14:27:45</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline/>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120807:95918590" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-08-07T14:44:50</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Katainen: Montin puheet syytä jättää omaan arvoonsa</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120807:95918679" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-08-07T15:07:56</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Montin kommentit ajalta ennen Suomen-vierailua</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120807:95918836" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-08-07T16:08:23</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Pokerinpeluu budjettiriihissä vähentynyt</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120807:95919208" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-08-07T16:41:34</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Yle: Monti hyväksyi kommenttinsa Suomi-vierailunsa jälkeen</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120807:95919100" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-08-07T16:52:21</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline/>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120807:95919101" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-08-07T16:59:12</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline/>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120807:95919282" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-08-07T17:04:22</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline/>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120807:95919570" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-08-07T18:34:43</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Der Spiegelin toimittaja: Monti tarkasti haastattelun viime viikolla</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120807:95919731" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-08-07T18:38:21</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Soini: Taantuman uhatessa tulisi elvyttää</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120807:95919644" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-08-07T18:47:07</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Der Spiegelin toimittaja: Monti tarkasti haastattelun viime viikolla</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120807:95919112" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-08-07T18:47:59</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Urpilainen: Perusturvan korotukset jo ensi vuoden alussa</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120807:95919679" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-08-07T18:48:37</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Urpilainen: Perusturvan korotukset jo ensi vuoden alussa</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120807:95918005" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-08-07T19:23:03</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Näissä asioissa Suomen on tulkittu haraavan vastaan</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120807:95917973" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-08-07T19:30:06</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Näin Mario Monti on kritisoinut Suomea</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120807:95918668" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-08-07T20:00:52</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Montin Suomi-kommenttien ajankohdasta iso soppa</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120807:95919981" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-08-07T20:09:43</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Näin Monti puhui Der Spiegelille</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120807:95918028" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-08-07T20:25:08</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Mario Montin lausunnot nostivat äläkän Suomessa</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120807:95919732" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-08-07T20:30:54</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Oppositio: Yllätyksetöntä ja innotonta</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120807:95919853" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-08-07T20:51:07</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Valtion ensi vuoden budjetti vajaa 7 miljardia miinuksella</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120807:95919665" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-08-07T21:10:17</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Perusturvaa kohennetaan jo ensi vuoden alussa</headline>
+				<description role="drol:summary"/>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120808:95920052" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-08-08T02:00:12</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>VM:n budjettiesitys ja ministeriöiden toiveet julki</headline>
+				<description role="drol:summary">Valtiovarainministerin budjettiehdotus julkistetaan kokonaisuudessaan VM:n nettisivuilla.
+Keskiviikkona tulevat julki myös muiden ministeriöiden toukokuussa valtiovarainministeriöön toimittamat budjettiehdotukset.</description>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120808:95923376" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-08-08T13:12:56</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Backman nosti vanhuspalvelulain SDP:n ykkösasiaksi</headline>
+				<description role="drol:summary">Sosialidemokraattisen eduskuntaryhmän kesäkokous pidetään Savonlinnassa 8.-9.elokuuta.
+Kokouspaikkana Wanhan Kasinon Savonlinna-sali.
+
+Kokous on avoin Savonlinnan kaupungin edustajan sekä Jutta Urpilaisen ja Jouni Backmanin puheenvuorojen ajan ja varsinaisten kokousasioiden alettua suljetaan toimittajilta.
+
+</description>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120808:95923499" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-08-08T13:31:22</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Urpilainen ottaisi rahoitusmarkkinaveron käyttöön etujoukossa</headline>
+				<description role="drol:summary">Sosialidemokraattisen eduskuntaryhmän kesäkokous pidetään Savonlinnassa 8.-9.elokuuta.
+Kokouspaikkana Wanhan Kasinon Savonlinna-sali.
+
+Kokous on avoin Savonlinnan kaupungin edustajan sekä Jutta Urpilaisen ja Jouni Backmanin puheenvuorojen ajan ja varsinaisten kokousasioiden alettua suljetaan toimittajilta.
+
+</description>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120808:95923638" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-08-08T14:07:51</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>SDP:n johto nosti vanhuspalvelulain budjetin ykköstavoitteeksi</headline>
+				<description role="drol:summary">Sosialidemokraattisen eduskuntaryhmän kesäkokous pidetään Savonlinnassa 8.-9.elokuuta.
+Kokouspaikkana Wanhan Kasinon Savonlinna-sali.
+
+Kokous on avoin Savonlinnan kaupungin edustajan sekä Jutta Urpilaisen ja Jouni Backmanin puheenvuorojen ajan ja varsinaisten kokousasioiden alettua suljetaan toimittajilta.
+
+</description>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120808:95923668" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-08-08T14:26:48</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Poliisit ovat saamassa lisärahaa</headline>
+				<description role="drol:summary">Valtiovarainministerin budjettiehdotus julkistetaan kokonaisuudessaan VM:n nettisivuilla.
+Keskiviikkona tulevat julki myös muiden ministeriöiden toukokuussa valtiovarainministeriöön toimittamat budjettiehdotukset.</description>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120808:95922581" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-08-08T14:51:39</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Musiikki vallasta käy ajan hermolle</headline>
+				<description role="drol:summary">Turun Musiikkijuhlat pidetään tänä vuonna 9.-18.8. Ohjelmistoa esitellään tiedotustilaisuudessa Turussa ke 8.8. Musiikkijuhlien teemana tänä vuonna valta. Ohjelmassa on yli 30 konserttia.
+
+Eräs esiintyjistä on turkkilainen maailmankuulu pianisti ja säveltäjä Fazil Say esiintyy 14.8.2012 Turun musiikkijuhlilla kotimaassaan odottavasta oikeudenkäynnistä huolimatta. Say on syytettynä turkkilaisessa oikeudessa islamin arvojen julkisesta loukkaamisesta Twitter-viesteissään. Syyte voi tuoda arvostetulle pianistille jopa 18 kuukauden vankilarangaistuksen, jos Say todetaan lokakuussa käytävässä oikeudenkäynnissä syylliseksi.
+
+Syytökset ovat saaneet aikaan laajan vastakampanjan internetissä sanan- ja ilmaisunvapauden puolesta. 
+
+Fazil Say (s. 1970, Ankara) on esiintynyt maailman arvostetuimpien orkestereiden solistina (mm. New York Philharmonic, Berliinin, Detroitin ja Tokion sinfoniaorkesterit) ja työskennellyt tunnettujen kapellimestareiden kanssa. Vuonna 2008 Say nimitettiin Euroopan Unionin kulttuurilähettilääksi.
+
+Turun musiikkijuhlilla Fazil Say esiintyy 14.8.2012 konsertissa Idän porteilla, jossa kuullaan Modest Musorgskin ja W.A. Mozartin musiikin lisäksi Sayn omia teoksia. 
+
+Turun Musiikkijuhlat -kaupunkifestivaali tarjoaa Turun tiloissa ja saaristossa taiteellisen johtajansa Topi Lehtipuun ohjaamana musiikkia moneen makuun: suuria orkesterikonsertteja, kamarimusiikkia, oopperaa, resitaaleja, jazzia ja konsertteja koko perheelle.</description>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120808:95923585" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-08-08T14:56:09</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Vanhuspalveluiden henkilöstömitoitus jäi auki</headline>
+				<description role="drol:summary">Valtiovarainministerin budjettiehdotus julkistetaan kokonaisuudessaan VM:n nettisivuilla.
+Keskiviikkona tulevat julki myös muiden ministeriöiden toukokuussa valtiovarainministeriöön toimittamat budjettiehdotukset.</description>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120808:95923768" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-08-08T15:11:26</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Työ- ja elinkeinotoimistoille tulossa lisärahaa</headline>
+				<description role="drol:summary">Valtiovarainministerin budjettiehdotus julkistetaan kokonaisuudessaan VM:n nettisivuilla.
+Keskiviikkona tulevat julki myös muiden ministeriöiden toukokuussa valtiovarainministeriöön toimittamat budjettiehdotukset.</description>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120808:95923844" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-08-08T15:13:08</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>VM ei lämmennyt viestintäministeriön pilvihankkeelle</headline>
+				<description role="drol:summary">Valtiovarainministerin budjettiehdotus julkistetaan kokonaisuudessaan VM:n nettisivuilla.
+Keskiviikkona tulevat julki myös muiden ministeriöiden toukokuussa valtiovarainministeriöön toimittamat budjettiehdotukset.</description>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120808:95923824" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-08-08T16:15:35</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>VM ei lämmennyt viestintäministeriön pilvihankkeelle</headline>
+				<description role="drol:summary">Valtiovarainministerin budjettiehdotus julkistetaan kokonaisuudessaan VM:n nettisivuilla.
+Keskiviikkona tulevat julki myös muiden ministeriöiden toukokuussa valtiovarainministeriöön toimittamat budjettiehdotukset.</description>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120808:95923847" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-08-08T19:41:29</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Maatalouden määrärahoihin vähennystä, metsäenergiaan lisäystä</headline>
+				<description role="drol:summary">Valtiovarainministerin budjettiehdotus julkistetaan kokonaisuudessaan VM:n nettisivuilla.
+Keskiviikkona tulevat julki myös muiden ministeriöiden toukokuussa valtiovarainministeriöön toimittamat budjettiehdotukset.</description>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120808:95923126" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-08-08T20:27:56</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Budjettiesitys osui monien ministeriöiden odotuksiin</headline>
+				<description role="drol:summary">Valtiovarainministerin budjettiehdotus julkistetaan kokonaisuudessaan VM:n nettisivuilla.
+Keskiviikkona tulevat julki myös muiden ministeriöiden toukokuussa valtiovarainministeriöön toimittamat budjettiehdotukset.</description>
+			</itemRef>
+			<itemRef contenttype="application/vnd.iptc.g2.newsitem+xml" residref="urn:newsml:stt.fi:20120809:95923318" size="255716540416">
+				<itemClass qcode="ninat:text"/>
+				<provider literal="STT"/>
+				<versionCreated>2012-08-09T13:33:34</versionCreated>
+				<pubStatus qcode="stat:usable"/>
+				<headline>Juokse demarin perässä Savonlinnassa</headline>
+				<description role="drol:summary">SDP:n eduskuntaryhmän kesäkokous pidetään Savonlinnassa 8.-9.elokuuta. Kokouspaikkana Wanhan Casinon Savonlinna-Sali. Kokous on avoin Savonlinnan kaupungin edustajan sekä Jutta Urpilaisen ja Jouni Backmanin puheenvuorojen ajan. Varsinainen lehdistötilaisuus pidetään 9.8.</description>
+			</itemRef>
+		</group>
+	</groupSet>
+</packageItem>
