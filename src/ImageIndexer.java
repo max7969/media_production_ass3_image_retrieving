@@ -39,7 +39,7 @@ import com.adobe.xmp.XMPMetaFactory;
 
 public class ImageIndexer {
     
-    private static String M_IMAGEPATH = "./mpup_part3_images";
+    private static String M_IMAGEPATH = "../mpup_part3_images";
     private static String M_INDEXPATH = M_IMAGEPATH+"/lire_index";
     private static Map<File, String> M_DCIDENTIFIERS = new HashMap<File, String>(); // stores the dc:identifier of an image (if it is available)
     
@@ -240,11 +240,11 @@ public class ImageIndexer {
         boolean fullIndexer = true;
         boolean fullIndexerOk = false;
         
-        System.out.println("IMAGE INDEXER V1 -- This image indexer permits to retrieve photos relative to newsitems which are stored in a package");
-        System.out.println("Put your package file in the XML format in the image folder:" + M_IMAGEPATH);
-        System.out.println("What is the name of your package ? (Example: topic.xml)");
+        System.out.println("IMAGE INDEXER -- This image indexer retrieves images corresponding to news items stored in a news package XML document.");
+        System.out.println("Put your package file in the XML format to the application root folder.");
+        System.out.println("What is the name of your package ? (Example: newsPackageExample.xml)");
         packageName = scanner.nextLine();
-        System.out.println("Which type of indexer do you want to create ?");
+        System.out.println("Which type of indexer would you like to create ?");
         System.out.println("1) CEDD");
         System.out.println("2) COLOR LAYOUT");
         System.out.println("3) FCTH");
@@ -311,7 +311,7 @@ public class ImageIndexer {
             	}
             }
             
-            System.out.println(fileItems);
+            //System.out.println(fileItems);
             
             System.out.println("CREATING NEWSITEMS ....");
             for(String fileItem : fileItems) {

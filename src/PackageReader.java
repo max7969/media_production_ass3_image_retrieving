@@ -18,7 +18,7 @@ import org.xml.sax.SAXException;
 public class PackageReader {
 	private final static String ITEM_XPATH = "packageItem/groupSet/group/itemRef/@residred"; 
 	
-    public static ArrayList<String> getNewsItemFromPackage(String path) {
+    public static ArrayList<String> getNewsItemFromPackage(String path) throws IOException {
     	ArrayList<String> newsItem = new ArrayList<String>();
     	
     	DocumentBuilderFactory documentFactory = DocumentBuilderFactory.newInstance();
@@ -28,15 +28,16 @@ public class PackageReader {
 		} catch (ParserConfigurationException e) {
 			e.printStackTrace();
 		}
-		if(documentBuilder == null ) { System.out.println("assadsad"); }
+
 		// Reads all the XML documents listed
 		Document xmlDocument = null;
 		XPath xpath = XPathFactory.newInstance().newXPath();
-		File packageFile = new File(path);
-		
+		File packageFile = new File("../"+path);
+		//System.out.println(packageFile.exists());
+
 		try {
 			xmlDocument = documentBuilder.parse(packageFile);
-			System.out.println(xmlDocument.getTextContent());
+			//System.out.println(xmlDocument.getTextContent());
 		} catch (IOException e) {
 			e.printStackTrace();
 		} catch (SAXException e) {
