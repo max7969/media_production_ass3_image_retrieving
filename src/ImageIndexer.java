@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
+import java.util.Scanner;
 import java.util.Set;
 
 import javax.imageio.ImageIO;
@@ -44,102 +45,103 @@ public class ImageIndexer {
     
     private static String COLOR_LAYOUT = "COLOR_LAYOUT";
     private static String CEDD = "CEDD";
-    private static String FCTHI = "FCTHI";
+    private static String FCTH = "FCTH";
     private static String TAMURA = "TAMURA";
     
 
-    public static String imageSearch(String imageToSearch, String indexPath, String builderType, String idToSearch) throws ImageReadException, IOException, XMPException {
+    public static ArrayList<String> imageSearch(String imageToSearch, String indexPath, String builderType) throws ImageReadException, IOException, XMPException {
         IndexReader ir = null;
         ImageSearcher imgSearcher = null;
         BufferedImage img = null;
+        ArrayList<String> matches = new ArrayList<String>();
         
         boolean imageOk = false;
         int numberOfImages = 10;
         
-        if(idToSearch == null) {
-        	try
-        	{
-        		ir = IndexReader.open(FSDirectory.open(new File(indexPath)));
-        		if (builderType.equals(COLOR_LAYOUT)) {
-        			imgSearcher = ImageSearcherFactory.createColorLayoutImageSearcher(numberOfImages);
-        		} else if (builderType.equals(CEDD)) {
-        			imgSearcher = ImageSearcherFactory.createCEDDImageSearcher(numberOfImages);
-        		} else if(builderType.equals(FCTHI)) {
-        			imgSearcher = ImageSearcherFactory.createFCTHImageSearcher(numberOfImages);
-        		} else if(builderType.equals(TAMURA)) {
-        			imgSearcher = ImageSearcherFactory.createTamuraImageSearcher(numberOfImages);
-        		}
-        		img = ImageIO.read(new File(imageToSearch));
-        		imageOk = true;
-        	}
-        	catch(Exception e)
-        	{
-        		e.printStackTrace();
-        	}
-        	// get the dc:identifier of the image provided as the search keyword (returns null if not found)
-        	String dc_id = ImageIndexer.getDcIdentifier(imageToSearch);
-        	
-        	// if the image has dc:identifier, lets loop through other images for matching dc:identifiers
-        	if(dc_id != null)
-        	{
-        		Set<File> hits = new HashSet<File>(); 
-        		for(File imgFile : M_DCIDENTIFIERS.keySet())
-        		{
-        			// check if dc_id matches the dc:identifier of any other (metadata enhanced) image (imgName)
-        			if(M_DCIDENTIFIERS.get(imgFile).equals(dc_id) && !imageToSearch.contains(imgFile.getName()))
-        			{
-        				hits.add(imgFile);
-        			}
-        		}
-        		if(hits.size() > 0)
-        		{
-        			System.out.println("Matching dc:identifier value(s) for "+new File(imageToSearch).getName());
-        			for(File hit : hits)
-        			{
-        				System.out.println(hit.getName());
-        			}
-        			System.out.println("\nFound matching dc:identifier(s). Skipping the index search...\n");
-        			return null; // no need to search the indexed images
-        		}
-        		System.out.println("Did not find any matching dc:identifiers. Continuing with the index search...");
-        	}
-        	
-        	ir = IndexReader.open(FSDirectory.open(new File(indexPath)));
-        	imgSearcher = ImageSearcherFactory.createColorLayoutImageSearcher(numberOfImages);
-        	img = ImageIO.read(new File(imageToSearch));
-        	imageOk = true;
-        	
-        	if(imageOk)
-        	{
-        		ImageSearchHits hits = null;
-        		hits = imgSearcher.search(img, ir);
-        		for(int i = 0; i < hits.length(); i++)
-        		{
-        			String fileName = hits.doc(i).getValues(DocumentBuilder.FIELD_NAME_IDENTIFIER)[0];
-        			System.out.println(String.format("%1.8f:\t%s",hits.score(i), new File(fileName).getName()));
-        		}
-        		System.out.println("");
-        		
-        		return hits.doc(0).getValues(DocumentBuilder.FIELD_NAME_IDENTIFIER)[0];
-        	}
-        	
-        	return "search";
-        	
-        } else {
-        	for(File imgFile : M_DCIDENTIFIERS.keySet())
+    	
+    	// get the dc:identifier of the image provided as the search keyword (returns null if not found)
+    	String dc_id = ImageIndexer.getDcIdentifier(imageToSearch);
+    	
+    	// if the image has dc:identifier, lets loop through other images for matching dc:identifiers
+    	if(dc_id != null)
+    	{
+    		Set<File> hits = new HashSet<File>(); 
+    		for(File imgFile : M_DCIDENTIFIERS.keySet())
     		{
     			// check if dc_id matches the dc:identifier of any other (metadata enhanced) image (imgName)
-    			if(M_DCIDENTIFIERS.get(imgFile).equals(idToSearch))
+    			if(M_DCIDENTIFIERS.get(imgFile).equals(dc_id) && !imageToSearch.contains(imgFile.getName()))
     			{
-    				return imgFile.getPath();
+    				hits.add(imgFile);
     			}
     		}
-        	
-        	return null;
-        }
+    		if(hits.size() > 0)
+    		{
+    			System.out.println("Matching dc:identifier value(s) for "+new File(imageToSearch).getName());
+    			for(File hit : hits)
+    			{
+    				matches.add(hit.getName());
+    				System.out.println(hit.getName());
+    			}
+    			System.out.println("\nFound matching dc:identifier(s). Skipping the index search...\n");
+    			return matches; // no need to search the indexed images
+    		}
+    		System.out.println("Did not find any matching dc:identifiers. Continuing with the index search...");
+    	}
+    	
+		try
+		{
+			ir = IndexReader.open(FSDirectory.open(new File(indexPath)));
+			if (builderType.equals(COLOR_LAYOUT)) {
+				imgSearcher = ImageSearcherFactory.createColorLayoutImageSearcher(numberOfImages);
+			} else if (builderType.equals(CEDD)) {
+				imgSearcher = ImageSearcherFactory.createCEDDImageSearcher(numberOfImages);
+			} else if(builderType.equals(FCTH)) {
+				imgSearcher = ImageSearcherFactory.createFCTHImageSearcher(numberOfImages);
+			} else if(builderType.equals(TAMURA)) {
+				imgSearcher = ImageSearcherFactory.createTamuraImageSearcher(numberOfImages);
+			}
+			img = ImageIO.read(new File(imageToSearch));
+			imageOk = true;
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+		
+		if(imageOk)
+		{
+			System.out.println("Matches found by Index search are :");
+			ImageSearchHits hits = null;
+			hits = imgSearcher.search(img, ir);
+			for(int i = 0; i < hits.length(); i++)
+			{
+				String fileName = hits.doc(i).getValues(DocumentBuilder.FIELD_NAME_IDENTIFIER)[0];
+				File f = new File(fileName);
+				if (hits.score(i) > 0.5) {
+					matches.add(f.getName());
+				}
+				System.out.println(String.format("%1.8f:\t%s",hits.score(i), f.getName()));
+			}
+			System.out.println("");
+		}
+    	
+    	return matches;
     }
     
-	public static void imageIndexer(String folderPath, String builderType) throws IOException, ImageReadException, XMPException {
+    public static String imageSearchById(String idToSearch) {
+    	for(File imgFile : M_DCIDENTIFIERS.keySet())
+		{
+			// check if dc_id matches the dc:identifier of any other (metadata enhanced) image (imgName)
+			if(M_DCIDENTIFIERS.get(imgFile).equals(idToSearch))
+			{
+				return imgFile.getPath();
+			}
+		}
+    	
+    	return null;
+    }
+    
+	public static void imageIndexer(String folderPath, String builderType, boolean skipIndex) throws IOException, ImageReadException, XMPException {
         
         File[] imageFiles = new File(folderPath).listFiles(new FileFilter() {
             
@@ -162,45 +164,47 @@ public class ImageIndexer {
         }
         
         // Create a LIRE DocumentBuilder
-        ChainedDocumentBuilder builder = null;
-        File lire_indexFolder = new File(M_IMAGEPATH, "lire_index");
-        
-        // if index doesn't exists...
-        if(!IndexReader.indexExists(FSDirectory.open(lire_indexFolder))) 
-        {
-        	builder = new ChainedDocumentBuilder();
-
-        	if(builderType.equals(COLOR_LAYOUT)) {
-        		builder.addBuilder(DocumentBuilderFactory.getColorLayoutBuilder());
-        	} else if (builderType.equals(CEDD)) {
-        		builder.addBuilder(DocumentBuilderFactory.getCEDDDocumentBuilder());
-        	} else if (builderType.equals(FCTHI)) {
-        		builder.addBuilder(DocumentBuilderFactory.getFCTHDocumentBuilder());
-        	} else if (builderType.equals(TAMURA)) {
-        		builder.addBuilder(DocumentBuilderFactory.getTamuraDocumentBuilder());
+        if (!skipIndex) {
+        	ChainedDocumentBuilder builder = null;
+        	File lire_indexFolder = new File(M_IMAGEPATH, "lire_index");
+        	
+        	// if index doesn't exists...
+        	if(!IndexReader.indexExists(FSDirectory.open(lire_indexFolder))) 
+        	{
+        		builder = new ChainedDocumentBuilder();
+        		
+        		if(builderType.equals(COLOR_LAYOUT)) {
+        			builder.addBuilder(DocumentBuilderFactory.getColorLayoutBuilder());
+        		} else if (builderType.equals(CEDD)) {
+        			builder.addBuilder(DocumentBuilderFactory.getCEDDDocumentBuilder());
+        		} else if (builderType.equals(FCTH)) {
+        			builder.addBuilder(DocumentBuilderFactory.getFCTHDocumentBuilder());
+        		} else if (builderType.equals(TAMURA)) {
+        			builder.addBuilder(DocumentBuilderFactory.getTamuraDocumentBuilder());
+        		}
+        		// Adda MPEG-7 Color Layout descritor -based builder
+        		lire_indexFolder.mkdirs();
+        		IndexWriterConfig conf = new IndexWriterConfig(Version.LUCENE_36, new WhitespaceAnalyzer(Version.LUCENE_36));
+        		IndexWriter iw  = new IndexWriter(FSDirectory.open(lire_indexFolder), conf);
+        		
+        		// Loop image files
+        		for (File imageFile : imageFiles) 
+        		{
+        			System.out.println("Processing image "+imageFile.getName());
+        			try {
+        				BufferedImage img = ImageIO.read(imageFile);
+        				Document document = builder.createDocument(img, imageFile.getAbsolutePath());
+        				iw.addDocument(document);
+        			} catch(Exception e) {
+        				e.printStackTrace();
+        			}
+        		}
+        		iw.close();
         	}
-            // Adda MPEG-7 Color Layout descritor -based builder
-            lire_indexFolder.mkdirs();
-            IndexWriterConfig conf = new IndexWriterConfig(Version.LUCENE_36, new WhitespaceAnalyzer(Version.LUCENE_36));
-            IndexWriter iw  = new IndexWriter(FSDirectory.open(lire_indexFolder), conf);
-            
-            // Loop image files
-            for (File imageFile : imageFiles) 
-            {
-                System.out.println("Processing image "+imageFile.getName());
-            	try {
-            		BufferedImage img = ImageIO.read(imageFile);
-            		Document document = builder.createDocument(img, imageFile.getAbsolutePath());
-            		iw.addDocument(document);
-            	} catch(Exception e) {
-            		e.printStackTrace();
-            	}
-            }
-            iw.close();
         }
     }
     
-    private static String getDcIdentifier(String imageFile) throws ImageReadException, IOException, XMPException {
+    public static String getDcIdentifier(String imageFile) throws ImageReadException, IOException, XMPException {
         return getDcIdentifier(new File(imageFile));
     }
     
@@ -227,14 +231,81 @@ public class ImageIndexer {
     public static void main(String[] args) {
         ArrayList<String> newsItems;
         ArrayList<String> fileItems = new ArrayList<String>();
+        Scanner scanner = new Scanner(System.in);
+        String packageName = "";
+        int indexerType = 0;
+        int fullIndexerInt = 0;
+        String indexer = COLOR_LAYOUT;
+        boolean indexerOk = false;
+        boolean fullIndexer = true;
+        boolean fullIndexerOk = false;
+        
+        System.out.println("IMAGE INDEXER V1 -- This image indexer permits to retrieve photos relative to newsitems which are stored in a package");
+        System.out.println("Put your package file in the XML format in the image folder:" + M_IMAGEPATH);
+        System.out.println("What is the name of your package ? (Example: topic.xml)");
+        packageName = scanner.nextLine();
+        System.out.println("Which type of indexer do you want to create ?");
+        System.out.println("1) CEDD");
+        System.out.println("2) COLOR LAYOUT");
+        System.out.println("3) FCTH");
+        System.out.println("4) TAMURA");
+        
+        
+        while (!indexerOk) {
+        	indexerType = scanner.nextInt();
+        	if(indexerType > 0 && indexerType < 5) {
+        		indexerOk = true;
+			} else {
+				System.out.println("This option doesn't exist");
+				scanner.nextLine();
+			}
+        }
+        
+        System.out.println("Do you want to create a full indexer ?");
+        System.out.println("1) YES");
+        System.out.println("2) NO");
+        
+        while (!fullIndexerOk) {
+        	fullIndexerInt = scanner.nextInt();
+        	if(fullIndexerInt > 0 && fullIndexerInt < 3) {
+        		fullIndexerOk = true;
+			} else {
+				System.out.println("This option doesn't exist");
+				scanner.nextLine();
+			}
+        }
+        
+        switch (indexerType) {
+		    case 1:
+		    	indexer = CEDD;
+		    	break;
+		    case 2:
+		    	indexer = COLOR_LAYOUT;
+		    	break;
+		    case 3:
+		    	indexer = FCTH;
+		    	break;
+		    case 4:
+		    	indexer = TAMURA;
+		    	break;
+        }
+        
+        if (fullIndexerInt == 1) {
+        	fullIndexer = false;
+        } else {
+        	fullIndexer = true;
+        }
+        
         try 
         {
-        	newsItems = PackageReader.getNewsItemFromPackage(M_IMAGEPATH+"/topic.xml");
-        	System.out.println(newsItems);
-            ImageIndexer.imageIndexer(M_IMAGEPATH, COLOR_LAYOUT);
+        	System.out.println("LOADING NEWSITEMS FROM PACKAGE ....");
+        	newsItems = PackageReader.getNewsItemFromPackage(M_IMAGEPATH+"/" + packageName);
+        	System.out.println("INDEXING IMAGES ....");
+            ImageIndexer.imageIndexer(M_IMAGEPATH, indexer, fullIndexer);
             
+            System.out.println("RETRIEVING IMAGES ....");
             for(String newsItem : newsItems) {
-            	String filePath = ImageIndexer.imageSearch(null, M_INDEXPATH, COLOR_LAYOUT, newsItem);
+            	String filePath = ImageIndexer.imageSearchById(newsItem);
             	if (filePath != null) {
             		fileItems.add(filePath);
             	}
@@ -242,12 +313,21 @@ public class ImageIndexer {
             
             System.out.println(fileItems);
             
+            System.out.println("CREATING NEWSITEMS ....");
             for(String fileItem : fileItems) {
-            	String filePath = ImageIndexer.imageSearch(fileItem, M_INDEXPATH, COLOR_LAYOUT, null);
-            	System.out.println(filePath + " - " + fileItem);
+            	System.out.println("=========================================================");
+            	ArrayList<String> filePaths = ImageIndexer.imageSearch(fileItem, M_INDEXPATH, indexer);
+            	filePaths.add(fileItem.substring(fileItem.lastIndexOf("./mpup_part3_images/")+20));
+            	
+            	System.out.println("MATCHES FOUND FOR " + fileItem);
+            	String id = getDcIdentifier(fileItem);
+            	
+        		for(String filePath : filePaths) {
+        			NewsPhotoWriter.writePhotoToFile(id, filePath);
+        			System.out.println("- " + filePath);
+            	}
+            	System.out.println("=========================================================");
             }
-            
-            System.out.println(fileItems);
         }
         catch (Exception e) 
         {

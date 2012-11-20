@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<newsItem xmlns="http://iptc.org/std/nar/2006-10-01/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" conformance="power" guid="urn:newsml:stt.fi:20120807:95919665" standard="NewsML-G2" standardversion="2.9" version="1" xml:lang="en-US" xsi:schemaLocation="http://iptc.org/std/nar/2006-10-01/../specification/NewsML-G2_2.9-spec-All-Power.xsd ">
+<catalogRef href="http://www.iptc.org/std/catalog/catalog.IPTC-G2-standards_16.xml"/>
+<rightsInfo>
+<copyrightHolder>
+<name/>
+</copyrightHolder>
+<copyrightNotice/>
+<usageTerms/>
+</rightsInfo>
+<itemMeta>
+<copyrigitemClasshtHolder qcode="ninat:picture"/>
+<provider>
+<name/>
+</provider>
+<versionCreated/>
+<firstCreated/>
+<pubStatus qcode="stat:usable"/>
+<title/>
+</itemMeta>
+<contentMeta>
+<urgency/>
+<contentCreated>Tue Nov 20 13:26:16 EET 2012</contentCreated>
+<creator role=""/>
+<contributor role=""/>
+<creditline/>
+<keyword role="krole:index"/>
+<headline/>
+<dateline/>
+<description role="drol:caption"/>
+</contentMeta>
+<contentSet>
+<remoteContent colourspace="colsp:sRGB" contenttype="image/jpeg" height="361" href="./mpup_part3_images/e1d0a8c1-a4c5-41f9-81c8-bd3bb26ea776.jpg" orientation="1" resolution="" size="14879" version="1" width="466">
+<altId type="gyiid:masterID">e1d0a8c1-a4c5-41f9-81c8-bd3bb26ea776.jpg</altId>
+</remoteContent>
+</contentSet>
+</newsItem>
+
